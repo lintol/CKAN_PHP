@@ -48,6 +48,12 @@
                 }
             }
         },
+        "GetUsers": {
+            "httpMethod": "GET",
+            "uri": "3/action/user_list",
+            "summary": "Retrieves a list of users",
+            "responseClass": "GetUsersOutput"
+        },
         "GetDatasetCount": {
             "httpMethod": "GET",
             "uri": "util/dataset-count",
@@ -308,6 +314,15 @@
                 }
             }
         },
+        "GetUsersOutput": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "location": "json",
+                    "type": "string"
+                }
+            }
+        },
 
         "GetGroupsOutput": {
             "type": "object",
@@ -319,7 +334,7 @@
                 }
             }
         },
- 	    "GetRevisionsOutput": {
+        "GetRevisionsOutput": {
             "type": "object",
             "properties": {
                 "id": {
