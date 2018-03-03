@@ -4,7 +4,7 @@
     "require": {
         "guzzle/guzzle": "*"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "config": {
         "bin-dir": "bin/"
     },
