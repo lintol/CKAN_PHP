@@ -220,6 +220,19 @@
                 }
             }
         },
+        "ResourceShow": {
+            "httpMethod": "GET",
+            "uri": "action/resource_show?id={id}",
+            "summary": "Retrieves resource details",
+            "responseClass": "ResourceShowOutput",
+            "parameters": {
+                "id": {
+                    "location": "uri",
+                    "description": "Resource id",
+                    "required": true
+                }
+            }
+        },
         "ResourceUpdate": {
             "httpMethod": "post",
             "uri": "action/resource_update",
@@ -242,6 +255,15 @@
 
     "models": {
         "PublisherShowOutput": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "location": "json",
+                    "type": "string"
+                }
+            }
+        },
+        "ResourceShowOutput": {
             "type": "object",
             "properties": {
                 "id": {
