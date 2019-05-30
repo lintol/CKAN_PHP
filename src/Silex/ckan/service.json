@@ -135,6 +135,19 @@
                 }
             }
         },
+        "PackageShow": {
+            "httpMethod": "GET",
+            "uri": "action/package_show?id={id}",
+            "summary": "Retrieves package details",
+            "responseClass": "PackageShowOutput",
+            "parameters": {
+                "id": {
+                    "location": "uri",
+                    "description": "Package id",
+                    "required": true
+                }
+            }
+        },
         "PackageCreate": {
             "httpMethod": "POST",
             "uri": "action/package_create",
@@ -371,6 +384,23 @@
                 "group_id": {
                     "location": "json",
                     "type": "string"
+                }
+            }
+        },
+        "PackageShowOutput": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "owner_org": {
+                    "type": "string"
+                },
+                "resources": {
+                    "type": "object"
                 }
             }
         },
