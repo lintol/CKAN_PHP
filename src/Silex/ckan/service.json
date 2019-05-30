@@ -391,15 +391,19 @@
             "type": "object",
             "properties": {
                 "id": {
+                    "location": "json",
                     "type": "string"
                 },
                 "name": {
+                    "location": "json",
                     "type": "string"
                 },
                 "owner_org": {
+                    "location": "json",
                     "type": "string"
                 },
                 "resources": {
+                    "location": "json",
                     "type": "object"
                 }
             }
