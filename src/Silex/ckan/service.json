@@ -132,6 +132,15 @@
                     "location": "query",
                     "description": "The facet query passed to SoLR.",
                     "required": false
+                },
+                "sort":{
+                    "location": "query"
+                },
+                "start":{
+                    "location": "query"
+                },
+                "rows":{
+                    "location":"query"
                 }
             }
         },
@@ -225,10 +234,13 @@
                 "order_by":{
                     "location": "query"
                 },
-                "offset":{
+                "sort":{
                     "location": "query"
                 },
-                "limit":{
+                "start":{
+                    "location": "query"
+                },
+                "rows":{
                     "location":"query"
                 }
             }
